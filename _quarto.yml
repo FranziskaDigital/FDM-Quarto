@@ -8,6 +8,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
+      - Nutzung_KI.qmd
+      - Nutzung_SEO.qmd
 
 format:
   html:

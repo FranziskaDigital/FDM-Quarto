@@ -2,5 +2,31 @@
 title: "Nutzung von KI"
 ---
 
-Hier entsteht eine Seite zur Nutzung von KI-Modellen von HuggingFace.
+Hier gibt es eine kleine Einführung zur Nutzung von KI-Modellen von <a href="https://huggingface.co/">HuggingFace</a>.
+
+# Was ist Hugging Face?
+
+Hugging Face ist eine Webseite, des gleichnamigen US-amerikanischen Unternehmens <b>Hugging Face Inc.</b>. Bei der Webseite handelt es sich um eine Art Plattform für maschinelles Lernen, auf der Datensätze und Modelle bereitgestellt und heruntergeladen werden können.
+
+# Was sind KI-Datensätze?
+
+Ein KI-Datensatz ist die Grundlage für das Training und die (Weiter-)Entwicklung von Algroithmen, die im Bereich des Maschinellen Lernens (ML) und Künstlicher Intelligenz (KI) genutzt werden. 
+
+# Was sind KI-Modelle?
+
+Ein KI-Modell ist eine Art Programm, das anhand einer Reihe von Daten (dem Datensatz) trainiert wurde, um bestimmte Aufgaben, wie beispielsweise Mustererkennung, zu lösen. Man unterscheidet verschiedene Arten von KI-Modellen. Es gibt Klassifizierungsmodelle, Regressionsmodelle, generative Modelle oder auch Basismodelle ("Foundation Models")
+
+## Wie finde ich KI-Modelle?
+
+Modelle kann man auf verschiedene Weisen finden. Einer der einfachsten Wege ist über Hugging Face Modelle nach dem jeweiligen Anwendungssbereich auszuwählen.<br></br>
+Es gibt auch andere Plattformen, die sich darauf spezialisiert haben, verfügbare Modelle aufzulisten. So zum Beispiel <a href="https://www.nele.ai/de/ki-modelle">nele.ai</a> oder auch <a href="https://cloud.google.com/use-cases/free-ai-tools?hl=de">Google</a>.
+
+## Wie nutze ich KI-Modelle
+
+![KI-Modelle auf HuggingFace](img/Bildschirmfoto_20260626_204739.png){.lightbox}
+
+
+### Image-to-Text-Modelle
+
+![<a href="https://huggingface.co/Keyven/g-ocr">G-OCR</a>](img/Bildschirmfoto_20260626_205212.png){.lightbox}
 

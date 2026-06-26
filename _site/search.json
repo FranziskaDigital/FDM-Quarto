@@ -11,6 +11,34 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "About this site"
+    "text": "Dies ist eine Quarto-Seite. Um eine Quarto-Seite auf Github/Gitlab zu veröffentlichen, braucht es nicht viel. Die einzelnen Schritte werden in der Quarto-Dokumentation Schritt-für-Schritt beschrieben.\nZiel dieser Webseite ist es, die Möglichkeiten von Quarto aufzuzeigen und andererseits spezifische Themen, wie SEO und KI im Rahmen dieser Seite als eine Art OER zu thematisieren."
+  },
+  {
+    "objectID": "Nutzung_KI.html",
+    "href": "Nutzung_KI.html",
+    "title": "Nutzung von KI",
+    "section": "",
+    "text": "Hier gibt es eine kleine Einführung zur Nutzung von KI-Modellen von HuggingFace."
+  },
+  {
+    "objectID": "Nutzung_KI.html#wie-finde-ich-ki-modelle",
+    "href": "Nutzung_KI.html#wie-finde-ich-ki-modelle",
+    "title": "Nutzung von KI",
+    "section": "Wie finde ich KI-Modelle?",
+    "text": "Wie finde ich KI-Modelle?\nModelle kann man auf verschiedene Weisen finden. Einer der einfachsten Wege ist über Hugging Face Modelle nach dem jeweiligen Anwendungssbereich auszuwählen. Es gibt auch andere Plattformen, die sich darauf spezialisiert haben, verfügbare Modelle aufzulisten. So zum Beispiel nele.ai oder auch Google."
+  },
+  {
+    "objectID": "Nutzung_KI.html#wie-nutze-ich-ki-modelle",
+    "href": "Nutzung_KI.html#wie-nutze-ich-ki-modelle",
+    "title": "Nutzung von KI",
+    "section": "Wie nutze ich KI-Modelle",
+    "text": "Wie nutze ich KI-Modelle\n\n\n\nKI-Modelle auf HuggingFace\n\n\n\nImage-to-Text-Modelle\n\n\n\nG-OCR\n\n\n\n\n\nKI-Modelle auf HuggingFace\nG-OCR"
+  },
+  {
+    "objectID": "Nutzung_SEO.html",
+    "href": "Nutzung_SEO.html",
+    "title": "Nutzung von SEO",
+    "section": "",
+    "text": "Hier entsteht eine Seite über SEO."
   }
 ]
