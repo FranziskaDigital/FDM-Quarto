@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.551">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto_for_FDM - About</title>
+<title>Quarto für FDM - Nutzung von KI</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -39,6 +39,9 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -53,19 +56,67 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://USERNAME.github.io/REPOSITORY/#website",
+      "url": "https://USERNAME.github.io/REPOSITORY/",
+      "name": "Kirchen der Nachkriegsmoderne",
+      "description": "Webseite zum Forschungsdatenmanagement und einem offenen Datensatz zu Kirchen der Nachkriegsmoderne.",
+      "inLanguage": "de",
+      "publisher": {
+        "@type": "Organization",
+        "name": "NAME DER INSTITUTION"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://USERNAME.github.io/REPOSITORY/#dataset",
+      "name": "Datensatz Kirchen der Nachkriegsmoderne",
+      "description": "Forschungsdatensatz zu Kirchen der Nachkriegsmoderne in Deutschland. Der Datensatz unterstützt Forschung, Nachnutzung und Forschungsdatenmanagement.",
+      "url": "https://USERNAME.github.io/REPOSITORY/",
+      "keywords": [
+        "Forschungsdatenmanagement",
+        "FDM",
+        "Kirchen",
+        "Nachkriegsmoderne",
+        "Architektur",
+        "Digital Humanities",
+        "Open Data",
+        "Denkmalschutz"
+      ],
+      "creator": {
+        "@type": "Organization",
+        "name": "NAME DER INSTITUTION"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "inLanguage": "de",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Deutschland"
+      }
+    }
+  ]
+}
+</script>
+
 
 
 <link rel="stylesheet" href="styles.css">
@@ -79,11 +130,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Quarto_for_FDM</span>
+    <span class="navbar-title">Quarto für FDM</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -93,11 +144,11 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Nutzung_KI.html"> 
+    <a class="nav-link active" href="./Nutzung_KI.html" aria-current="page"> 
 <span class="menu-text">Nutzung von KI</span></a>
   </li>  
   <li class="nav-item">
@@ -116,14 +167,30 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul>
+  <li><a href="#was-ist-hugging-face" id="toc-was-ist-hugging-face" class="nav-link active" data-scroll-target="#was-ist-hugging-face">Was ist Hugging Face?</a></li>
+  <li><a href="#was-sind-ki-datensätze" id="toc-was-sind-ki-datensätze" class="nav-link" data-scroll-target="#was-sind-ki-datensätze">Was sind KI-Datensätze?</a></li>
+  <li><a href="#was-sind-ki-modelle" id="toc-was-sind-ki-modelle" class="nav-link" data-scroll-target="#was-sind-ki-modelle">Was sind KI-Modelle?</a>
+  <ul class="collapse">
+  <li><a href="#wie-finde-ich-ki-modelle" id="toc-wie-finde-ich-ki-modelle" class="nav-link" data-scroll-target="#wie-finde-ich-ki-modelle">Wie finde ich KI-Modelle?</a></li>
+  <li><a href="#wie-nutze-ich-ki-modelle" id="toc-wie-nutze-ich-ki-modelle" class="nav-link" data-scroll-target="#wie-nutze-ich-ki-modelle">Wie nutze ich KI-Modelle</a>
+  <ul class="collapse">
+  <li><a href="#image-to-text-modelle" id="toc-image-to-text-modelle" class="nav-link" data-scroll-target="#image-to-text-modelle">Image-to-Text-Modelle</a></li>
+  <li><a href="#image-to-caption" id="toc-image-to-caption" class="nav-link" data-scroll-target="#image-to-caption">Image-to-Caption</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+<div class="toc-actions"><ul><li><a href="https://github.com/franziskadigital/FDM-Quarto/blob/main/Nutzung_KI.qmd" class="toc-action"><i class="bi bi-github"></i>Quellcode anzeigen</a></li></ul></div></nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Nutzung von KI</h1>
 </div>
 
 
@@ -140,10 +207,103 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Dies ist eine Quarto-Seite. Um eine Quarto-Seite auf Github/Gitlab zu veröffentlichen, braucht es nicht viel. Die einzelnen Schritte werden in der <a href="https://quarto.org/docs/publishing/github-pages.html">Quarto-Dokumentation</a> Schritt-für-Schritt beschrieben.</p>
-<p>Ziel dieser Webseite ist es, die Möglichkeiten von Quarto aufzuzeigen und andererseits spezifische Themen, wie <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">SEO</a> und <a href="https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz">KI</a> im Rahmen dieser Seite als eine Art OER zu thematisieren.</p>
+<p>Hier gibt es eine kleine Einführung zur Nutzung von KI-Modellen von <a href="https://huggingface.co/">HuggingFace</a>.</p>
+<section id="was-ist-hugging-face" class="level1">
+<h1>Was ist Hugging Face?</h1>
+<p>Hugging Face ist eine Webseite, des gleichnamigen US-amerikanischen Unternehmens <b>Hugging Face Inc.</b>. Bei der Webseite handelt es sich um eine Art Plattform für maschinelles Lernen, auf der Datensätze und Modelle bereitgestellt und heruntergeladen werden können.</p>
+</section>
+<section id="was-sind-ki-datensätze" class="level1">
+<h1>Was sind KI-Datensätze?</h1>
+<p>Ein KI-Datensatz ist die Grundlage für das Training und die (Weiter-)Entwicklung von Algroithmen, die im Bereich des Maschinellen Lernens (ML) und Künstlicher Intelligenz (KI) genutzt werden.</p>
+</section>
+<section id="was-sind-ki-modelle" class="level1">
+<h1>Was sind KI-Modelle?</h1>
+<p>Ein KI-Modell ist eine Art Programm, das anhand einer Reihe von Daten (dem Datensatz) trainiert wurde, um bestimmte Aufgaben, wie beispielsweise Mustererkennung, zu lösen. Man unterscheidet verschiedene Arten von KI-Modellen. Es gibt Klassifizierungsmodelle, Regressionsmodelle, generative Modelle oder auch Basismodelle (“Foundation Models”)</p>
+<section id="wie-finde-ich-ki-modelle" class="level2">
+<h2 class="anchored" data-anchor-id="wie-finde-ich-ki-modelle">Wie finde ich KI-Modelle?</h2>
+<p>Modelle kann man auf verschiedene Weisen finden. Einer der einfachsten Wege ist über Hugging Face Modelle nach dem jeweiligen Anwendungssbereich auszuwählen.<br><br> Es gibt auch andere Plattformen, die sich darauf spezialisiert haben, verfügbare Modelle aufzulisten. So zum Beispiel <a href="https://www.nele.ai/de/ki-modelle">nele.ai</a> oder auch <a href="https://cloud.google.com/use-cases/free-ai-tools?hl=de">Google</a>.</p>
+</section>
+<section id="wie-nutze-ich-ki-modelle" class="level2">
+<h2 class="anchored" data-anchor-id="wie-nutze-ich-ki-modelle">Wie nutze ich KI-Modelle</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/Bildschirmfoto_20260626_204739.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" data-glightbox="description: .lightbox-desc-1" title="KI-Modelle auf HuggingFace"><img src="img/Bildschirmfoto_20260626_204739.png" class="img-fluid figure-img" alt="KI-Modelle auf HuggingFace"></a></p>
+<figcaption>KI-Modelle auf HuggingFace</figcaption>
+</figure>
+</div>
+<section id="image-to-text-modelle" class="level3">
+<h3 class="anchored" data-anchor-id="image-to-text-modelle">Image-to-Text-Modelle</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="img/Bildschirmfoto_20260626_205212.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" data-glightbox="description: .lightbox-desc-2" title="G-OCR"><img src="img/Bildschirmfoto_20260626_205212.png" class="img-fluid figure-img" alt="G-OCR"></a></p>
+<figcaption><a href="https://huggingface.co/Keyven/g-ocr">G-OCR</a></figcaption>
+</figure>
+</div>
+</section>
+<section id="image-to-caption" class="level3">
+<h3 class="anchored" data-anchor-id="image-to-caption">Image-to-Caption</h3>
+<ul>
+<li><p>Image-to-Caption-Modell auf <a href="https://huggingface.co/GHonem/blip-image-captioning-base-test_sagemaker-tops-3">HuggingFace</a></p></li>
+<li><p>wenig Informationen zu Datengrundlage und Zweck</p></li>
+<li><p>Fähigkeiten:</p>
+<ul>
+<li>Bilder automatisch beschreiben</li>
+<li>Objekte und Personen erkennen</li>
+<li>Szenen in natürlicher Sprache zusammenfassen</li>
+<li>Bildbeschreibungen für Suche und Barrierefreiheit erzeugen</li>
+</ul></li>
+</ul>
+<section id="lokale-installation" class="level4">
+<h4 class="anchored" data-anchor-id="lokale-installation">Lokale Installation</h4>
+<p><strong>Voraussetzungen:</strong><br> * Python * Installation in virtueller Umgebung ratsam * Benötigte Softwarepakette: torch, torchvision, transformers, pillow, accelerate</p>
+<p><strong>Installation:</strong><br></p>
+<ol type="1">
+<li><ol type="a">
+<li>Virtuelle Umgebung in Windows (via Terminal):</li>
+</ol>
+<pre><code>python -m venv blip-env
+blip-env\Scripts\activate</code></pre>
+<ol start="2" type="a">
+<li>Virtueelle Umgebung in Linux/macOS:</li>
+</ol>
+<pre><code> python3 -m venv blip-env
+ source blip-env/bin/activate</code></pre></li>
+<li>Benötigte Software-Pakete installieren:</li>
+</ol>
+<pre><code>pip install torch torchvision transformers pillow accelerate</code></pre>
+<ol start="3" type="1">
+<li>Python-Skript für die Modellnutzung erstellen</li>
+</ol>
+<pre><code>from transformers import pipeline
+
+pipe = pipeline(
+    "image-text-to-text",
+    model="GHonem/blip-image-captioning-base-test_sagemaker-tops-3"
+)
+
+result = pipe("bild.jpg")
+
+print(result)
+</code></pre>
+<ol start="4" type="1">
+<li>Skript verwenden</li>
+</ol>
+<pre><code>python caption.py</code></pre>
+<ul>
+<li>Das Modell wird von HuggingFace heruntergeladen.</li>
+<li>Es wird lokal gespeichert.</li>
+<li>Anschließend wird das Bild analysiert.</li>
+</ul>
 
 
+<div class="hidden" aria-hidden="true">
+<span class="glightbox-desc lightbox-desc-1">KI-Modelle auf HuggingFace</span>
+<span class="glightbox-desc lightbox-desc-2"><a href="https://huggingface.co/Keyven/g-ocr">G-OCR</a></span>
+</div>
+</section>
+</section>
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -200,12 +360,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopiert");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopiert");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -227,7 +387,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/franziskadigital\.github\.io\/FDM-Quarto\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -556,6 +716,31 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/franziskadigital/FDM-Quarto/blob/main/Nutzung_KI.qmd" class="toc-action"><i class="bi bi-github"></i>Quellcode anzeigen</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom"});
+window.onload = () => {
+  lightboxQuarto.on('slide_before_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    const href = trigger.getAttribute('href');
+    if (href !== null) {
+      const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+      if (imgEl !== null) {
+        const srcAttr = imgEl.getAttribute("src");
+        if (srcAttr && srcAttr.startsWith("data:")) {
+          slideConfig.href = srcAttr;
+        }
+      }
+    } 
+  });
+
+  lightboxQuarto.on('slide_after_load', (data) => {
+    const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+    if (window.Quarto?.typesetMath) {
+      window.Quarto.typesetMath(slideNode);
+    }
+  });
+
+};
+          </script>
 
 
 

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.4.551">
@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto_for_FDM - About</title>
+<title>Quarto für FDM - Quarto als Veröffentlichungstool für FDM</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -53,19 +53,67 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
   }
 }</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://USERNAME.github.io/REPOSITORY/#website",
+      "url": "https://USERNAME.github.io/REPOSITORY/",
+      "name": "Kirchen der Nachkriegsmoderne",
+      "description": "Webseite zum Forschungsdatenmanagement und einem offenen Datensatz zu Kirchen der Nachkriegsmoderne.",
+      "inLanguage": "de",
+      "publisher": {
+        "@type": "Organization",
+        "name": "NAME DER INSTITUTION"
+      }
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://USERNAME.github.io/REPOSITORY/#dataset",
+      "name": "Datensatz Kirchen der Nachkriegsmoderne",
+      "description": "Forschungsdatensatz zu Kirchen der Nachkriegsmoderne in Deutschland. Der Datensatz unterstützt Forschung, Nachnutzung und Forschungsdatenmanagement.",
+      "url": "https://USERNAME.github.io/REPOSITORY/",
+      "keywords": [
+        "Forschungsdatenmanagement",
+        "FDM",
+        "Kirchen",
+        "Nachkriegsmoderne",
+        "Architektur",
+        "Digital Humanities",
+        "Open Data",
+        "Denkmalschutz"
+      ],
+      "creator": {
+        "@type": "Organization",
+        "name": "NAME DER INSTITUTION"
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "inLanguage": "de",
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "Deutschland"
+      }
+    }
+  ]
+}
+</script>
+
 
 
 <link rel="stylesheet" href="styles.css">
@@ -79,21 +127,21 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Quarto_for_FDM</span>
+    <span class="navbar-title">Quarto für FDM</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page"> 
+    <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
@@ -123,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">Quarto als Veröffentlichungstool für FDM</h1>
 </div>
 
 
@@ -140,8 +188,9 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Dies ist eine Quarto-Seite. Um eine Quarto-Seite auf Github/Gitlab zu veröffentlichen, braucht es nicht viel. Die einzelnen Schritte werden in der <a href="https://quarto.org/docs/publishing/github-pages.html">Quarto-Dokumentation</a> Schritt-für-Schritt beschrieben.</p>
-<p>Ziel dieser Webseite ist es, die Möglichkeiten von Quarto aufzuzeigen und andererseits spezifische Themen, wie <a href="https://en.wikipedia.org/wiki/Search_engine_optimization">SEO</a> und <a href="https://de.wikipedia.org/wiki/K%C3%BCnstliche_Intelligenz">KI</a> im Rahmen dieser Seite als eine Art OER zu thematisieren.</p>
+<p>Das ist die Startseite für einen ersten Einblick in Quarto.</p>
+<p>This is a Quarto website.</p>
+<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
 
 
 
@@ -200,12 +249,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // flash "checked"
     button.classList.add('code-copy-button-checked');
     var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
+    button.setAttribute("title", "Kopiert");
     let tooltip;
     if (window.bootstrap) {
       button.setAttribute("data-bs-toggle", "tooltip");
       button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
+      button.setAttribute("data-bs-title", "Kopiert");
       tooltip = new bootstrap.Tooltip(button, 
         { trigger: "manual", 
           customClass: "code-copy-button-tooltip",
@@ -227,7 +276,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   });
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
+      var filterRegex = new RegExp("https:\/\/franziskadigital\.github\.io\/FDM-Quarto\/");
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -560,4 +609,4 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
-</body></html>
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions"><ul><li><a href="https://github.com/franziskadigital/FDM-Quarto/blob/main/index.qmd" class="toc-action"><i class="bi bi-github"></i>Quellcode anzeigen</a></li></ul></div></div></div></footer></body></html>

@@ -96,6 +96,14 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./Nutzung_KI.html"> 
+<span class="menu-text">Nutzung von KI</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./Nutzung_SEO.html" aria-current="page"> 
+<span class="menu-text">Nutzung von SEO</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
@@ -108,7 +116,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welche-prinzipien-sollte-ich-für-seo-beachten" id="toc-welche-prinzipien-sollte-ich-für-seo-beachten" class="nav-link active" data-scroll-target="#welche-prinzipien-sollte-ich-für-seo-beachten">Welche Prinzipien sollte ich für SEO beachten?</a></li>
+  <li><a href="#wie-setze-ich-seo-mit-einer-quarto-webseite-um" id="toc-wie-setze-ich-seo-mit-einer-quarto-webseite-um" class="nav-link" data-scroll-target="#wie-setze-ich-seo-mit-einer-quarto-webseite-um">Wie setze ich SEO mit einer Quarto-Webseite um?</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -132,9 +147,144 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Hier entsteht eine Seite über SEO.</p>
+<section id="welche-prinzipien-sollte-ich-für-seo-beachten" class="level1">
+<h1>Welche Prinzipien sollte ich für SEO beachten?</h1>
+<p>Für die optimale Auffindbarkeit ist es nicht nur wichtig die Daten möglichst gut aufzubereiten, sondern sie auf auf Seiten bereitzustellen, die auch die vollständigen Metadaten enthalten und bei denen es sich um indexierte Webseiten handeln sollte.</p>
+<ol type="1">
+<li><p>Jeder Datensatz sollte eine stabile, öffentlich erreichbare URL haben.</p></li>
+<li><p>Der Datensatz sollte einen aussagekräftigen Titel haben, nach denen die mögliche Zielgruppe suchen würde. Im besten Fall enthält der Titel: Thema, Ort, Zeitraum, Granularität und wichtigste Dimensionen.</p></li>
+<li><p>Für eine Beschreibung des Datensatzes sollten folgende Fragen geklärt werden:</p>
+<ul>
+<li>Was enthält der Datensatz?<br>
+</li>
+<li>Für welchen Zeitraum?<br>
+</li>
+<li>Welche Region oder Zielgruppe?<br>
+</li>
+<li>Welche Variablen?<br>
+</li>
+<li>Aus welcher Quelle?<br>
+</li>
+<li>Wie oft wird er aktualisiert?<br>
+</li>
+<li>Wofür kann man ihn verwenden?</li>
+</ul></li>
+<li><p>Für SEO und Datenkataloge sind folgende Metadaten besonders relevant:</p></li>
+</ol>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Feld</th>
+<th>Zweck</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Titel</td>
+<td>Hauptsuchbegriff und Snippet-Relevanz</td>
+</tr>
+<tr class="even">
+<td>Beschreibung</td>
+<td>Kontext und Long-Tail-Suchanfragen</td>
+</tr>
+<tr class="odd">
+<td>Keywords</td>
+<td>Synonyme, Fachbegriffe, Abkürzungen</td>
+</tr>
+<tr class="even">
+<td>Herausgeber</td>
+<td>Vertrauenssignal</td>
+</tr>
+<tr class="odd">
+<td>Veröffentlichungsdatum</td>
+<td>Aktualität</td>
+</tr>
+<tr class="even">
+<td>Änderungsdatum</td>
+<td>Pflegezustand</td>
+</tr>
+<tr class="odd">
+<td>Zeitraum</td>
+<td>zeitliche Einordnung</td>
+</tr>
+<tr class="even">
+<td>Raumbezug</td>
+<td>Land, Stadt, Region, Koordinaten</td>
+</tr>
+<tr class="odd">
+<td>Lizenz</td>
+<td>Wiederverwendbarkeit</td>
+</tr>
+<tr class="even">
+<td>Datenformat</td>
+<td>CSV, JSON, XLSX, RDF, API</td>
+</tr>
+<tr class="odd">
+<td>Sprache</td>
+<td>z. B. Deutsch/Englisch</td>
+</tr>
+<tr class="even">
+<td>Version</td>
+<td>Nachvollziehbarkeit</td>
+</tr>
+<tr class="odd">
+<td>DOI oder Identifier</td>
+<td>dauerhafte Zitierbarkeit</td>
+</tr>
+<tr class="even">
+<td>Kontakt</td>
+<td>Rückfragen und Vertrauen</td>
+</tr>
+</tbody>
+</table>
+<ol start="5" type="1">
+<li>Die Landingpage zum Datensatz sollte nach Prinzipien von schema.org den Datensatz beschreiben. Dies geschieht am besten in Form einer JSON-LD.</li>
+</ol>
+<pre class="{bash}"><code>&lt;script type="application/ld+json"&gt;
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Bevölkerungsentwicklung in Berlin nach Bezirk, Alter und Geschlecht 2020–2025",
+  "description": "Monatliche Bevölkerungszahlen für Berlin, gegliedert nach Bezirk, Altersgruppe und Geschlecht.",
+  "keywords": [
+    "Bevölkerung",
+    "Berlin",
+    "Demografie",
+    "Bezirke",
+    "Altersgruppen"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "name": "Beispielstadt Berlin"
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-06-01",
+  "temporalCoverage": "2020-01/2025-12",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Berlin"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://example.org/daten/bevoelkerung-berlin.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://example.org/daten/bevoelkerung-berlin.json"
+    }
+  ]
+}
+&lt;/script&gt;</code></pre>
+</section>
+<section id="wie-setze-ich-seo-mit-einer-quarto-webseite-um" class="level1">
+<h1>Wie setze ich SEO mit einer Quarto-Webseite um?</h1>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

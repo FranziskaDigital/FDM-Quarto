@@ -1,8 +1,9 @@
 project:
   type: website
+  output-dir: docs
 
 website:
-  title: "Quarto_for_FDM"
+  title: "Quarto für FDM"
   navbar:
     left:
       - href: index.qmd
@@ -10,14 +11,20 @@ website:
       - about.qmd
       - Nutzung_KI.qmd
       - Nutzung_SEO.qmd
+  description: "Forschungsdatenmanagement und offener Datensatz zu Kirchen der Nachkriegsmoderne."
+  site-url: https://franziskadigital.github.io/FDM-Quarto/
+  repo-url: https://github.com/franziskadigital/FDM-Quarto
+  repo-actions: [source]
+  search: true
 
 format:
   html:
-    theme:
-      - cosmo
-      - brand
-    css: styles.css
+    theme: cosmo
     toc: true
+    css: styles.css
+    lang: de
+    include-in-header:
+      - includes/schema.html
 
-
-
+execute:
+  freeze: auto

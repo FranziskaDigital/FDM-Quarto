@@ -131,6 +131,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#wie-nutze-ich-ki-modelle" id="toc-wie-nutze-ich-ki-modelle" class="nav-link" data-scroll-target="#wie-nutze-ich-ki-modelle">Wie nutze ich KI-Modelle</a>
   <ul class="collapse">
   <li><a href="#image-to-text-modelle" id="toc-image-to-text-modelle" class="nav-link" data-scroll-target="#image-to-text-modelle">Image-to-Text-Modelle</a></li>
+  <li><a href="#image-to-caption" id="toc-image-to-caption" class="nav-link" data-scroll-target="#image-to-caption">Image-to-Caption</a></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -190,12 +191,68 @@ ul.task-list li input[type="checkbox"] {
 <figcaption><a href="https://huggingface.co/Keyven/g-ocr">G-OCR</a></figcaption>
 </figure>
 </div>
+</section>
+<section id="image-to-caption" class="level3">
+<h3 class="anchored" data-anchor-id="image-to-caption">Image-to-Caption</h3>
+<ul>
+<li><p>Image-to-Caption-Modell auf <a href="https://huggingface.co/GHonem/blip-image-captioning-base-test_sagemaker-tops-3">HuggingFace</a></p></li>
+<li><p>wenig Informationen zu Datengrundlage und Zweck</p></li>
+<li><p>Fähigkeiten:</p>
+<ul>
+<li>Bilder automatisch beschreiben</li>
+<li>Objekte und Personen erkennen</li>
+<li>Szenen in natürlicher Sprache zusammenfassen</li>
+<li>Bildbeschreibungen für Suche und Barrierefreiheit erzeugen</li>
+</ul></li>
+</ul>
+<section id="lokale-installation" class="level4">
+<h4 class="anchored" data-anchor-id="lokale-installation">Lokale Installation</h4>
+<p><strong>Voraussetzungen:</strong><br> * Python * Installation in virtueller Umgebung ratsam * Benötigte Softwarepakette: torch, torchvision, transformers, pillow, accelerate</p>
+<p><strong>Installation:</strong><br></p>
+<ol type="1">
+<li><ol type="a">
+<li>Virtuelle Umgebung in Windows (via Terminal):</li>
+</ol>
+<pre><code>python -m venv blip-env
+blip-env\Scripts\activate</code></pre>
+<ol start="2" type="a">
+<li>Virtueelle Umgebung in Linux/macOS:</li>
+</ol>
+<pre><code> python3 -m venv blip-env
+ source blip-env/bin/activate</code></pre></li>
+<li>Benötigte Software-Pakete installieren:</li>
+</ol>
+<pre><code>pip install torch torchvision transformers pillow accelerate</code></pre>
+<ol start="3" type="1">
+<li>Python-Skript für die Modellnutzung erstellen</li>
+</ol>
+<pre><code>from transformers import pipeline
+
+pipe = pipeline(
+    "image-text-to-text",
+    model="GHonem/blip-image-captioning-base-test_sagemaker-tops-3"
+)
+
+result = pipe("bild.jpg")
+
+print(result)
+</code></pre>
+<ol start="4" type="1">
+<li>Skript verwenden</li>
+</ol>
+<pre><code>python caption.py</code></pre>
+<ul>
+<li>Das Modell wird von HuggingFace heruntergeladen.</li>
+<li>Es wird lokal gespeichert.</li>
+<li>Anschließend wird das Bild analysiert.</li>
+</ul>
 
 
 <div class="hidden" aria-hidden="true">
 <span class="glightbox-desc lightbox-desc-1">KI-Modelle auf HuggingFace</span>
 <span class="glightbox-desc lightbox-desc-2"><a href="https://huggingface.co/Keyven/g-ocr">G-OCR</a></span>
 </div>
+</section>
 </section>
 </section>
 </section>
@@ -611,7 +668,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","loop":false,"descPosition":"bottom","closeEffect":"zoom"});
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","loop":false,"openEffect":"zoom","descPosition":"bottom","selector":".lightbox"});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

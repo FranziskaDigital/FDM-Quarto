@@ -30,3 +30,68 @@ Es gibt auch andere Plattformen, die sich darauf spezialisiert haben, verfügbar
 
 ![<a href="https://huggingface.co/Keyven/g-ocr">G-OCR</a>](img/Bildschirmfoto_20260626_205212.png){.lightbox}
 
+### Image-to-Caption
+
+* Image-to-Caption-Modell auf <a href="https://huggingface.co/GHonem/blip-image-captioning-base-test_sagemaker-tops-3">HuggingFace</a>
+
+* wenig Informationen zu Datengrundlage und Zweck 
+* Fähigkeiten: 
+    * Bilder automatisch beschreiben
+    * Objekte und Personen erkennen
+    * Szenen in natürlicher Sprache zusammenfassen
+    * Bildbeschreibungen für Suche und Barrierefreiheit erzeugen
+
+#### Lokale Installation
+
+**Voraussetzungen:**<br>
+    * Python
+    * Installation in virtueller Umgebung ratsam
+    * Benötigte Softwarepakette: torch, torchvision, transformers, pillow, accelerate
+
+**Installation:**<br>
+
+1. a) Virtuelle Umgebung in Windows (via Terminal):
+
+    ```
+    python -m venv blip-env
+    blip-env\Scripts\activate
+    ```
+
+    b) Virtueelle Umgebung in Linux/macOS:
+
+    ```
+     python3 -m venv blip-env
+     source blip-env/bin/activate
+    ```
+
+2. Benötigte Software-Pakete installieren:
+
+```
+pip install torch torchvision transformers pillow accelerate
+```
+
+3. Python-Skript für die Modellnutzung erstellen
+
+```
+from transformers import pipeline
+
+pipe = pipeline(
+    "image-text-to-text",
+    model="GHonem/blip-image-captioning-base-test_sagemaker-tops-3"
+)
+
+result = pipe("bild.jpg")
+
+print(result)
+
+```
+
+4. Skript verwenden 
+
+```
+python caption.py
+```
+
+* Das Modell wird von HuggingFace heruntergeladen. 
+* Es wird lokal gespeichert.
+* Anschließend wird das Bild analysiert. 

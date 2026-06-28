@@ -2,5 +2,87 @@
 title: "Nutzung von SEO"
 ---
 
-Hier entsteht eine Seite über SEO.
+# Welche Prinzipien sollte ich für SEO beachten?
+
+Für die optimale Auffindbarkeit ist es nicht nur wichtig die Daten möglichst gut aufzubereiten, sondern sie auf auf Seiten bereitzustellen, die auch die vollständigen Metadaten enthalten und bei denen es sich um indexierte Webseiten handeln sollte.
+
+
+1. Jeder Datensatz sollte eine stabile, öffentlich erreichbare URL haben.
+
+2. Der Datensatz sollte einen aussagekräftigen Titel haben, nach denen die mögliche Zielgruppe suchen würde. Im besten Fall enthält der Titel: Thema, Ort, Zeitraum, Granularität und wichtigste Dimensionen.
+
+3. Für eine Beschreibung des Datensatzes sollten folgende Fragen geklärt werden:
+    * Was enthält der Datensatz?  
+    * Für welchen Zeitraum?  
+    * Welche Region oder Zielgruppe?  
+    * Welche Variablen?  
+    * Aus welcher Quelle?  
+    * Wie oft wird er aktualisiert?  
+    * Wofür kann man ihn verwenden?
+
+4. Für SEO und Datenkataloge sind folgende Metadaten besonders relevant:
+
+
+|Feld|Zweck|
+|---|---|
+|Titel|Hauptsuchbegriff und Snippet-Relevanz|
+|Beschreibung|Kontext und Long-Tail-Suchanfragen|
+|Keywords|Synonyme, Fachbegriffe, Abkürzungen|
+|Herausgeber|Vertrauenssignal|
+|Veröffentlichungsdatum|Aktualität|
+|Änderungsdatum|Pflegezustand|
+|Zeitraum|zeitliche Einordnung|
+|Raumbezug|Land, Stadt, Region, Koordinaten|
+|Lizenz|Wiederverwendbarkeit|
+|Datenformat|CSV, JSON, XLSX, RDF, API|
+|Sprache|z. B. Deutsch/Englisch|
+|Version|Nachvollziehbarkeit|
+|DOI oder Identifier|dauerhafte Zitierbarkeit|
+|Kontakt|Rückfragen und Vertrauen|
+
+5. Die Landingpage zum Datensatz sollte nach Prinzipien von schema.org den Datensatz beschreiben. Dies geschieht am besten in Form einer JSON-LD.
+
+```{bash}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Bevölkerungsentwicklung in Berlin nach Bezirk, Alter und Geschlecht 2020–2025",
+  "description": "Monatliche Bevölkerungszahlen für Berlin, gegliedert nach Bezirk, Altersgruppe und Geschlecht.",
+  "keywords": [
+    "Bevölkerung",
+    "Berlin",
+    "Demografie",
+    "Bezirke",
+    "Altersgruppen"
+  ],
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "creator": {
+    "@type": "Organization",
+    "name": "Beispielstadt Berlin"
+  },
+  "datePublished": "2025-01-15",
+  "dateModified": "2026-06-01",
+  "temporalCoverage": "2020-01/2025-12",
+  "spatialCoverage": {
+    "@type": "Place",
+    "name": "Berlin"
+  },
+  "distribution": [
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "text/csv",
+      "contentUrl": "https://example.org/daten/bevoelkerung-berlin.csv"
+    },
+    {
+      "@type": "DataDownload",
+      "encodingFormat": "application/json",
+      "contentUrl": "https://example.org/daten/bevoelkerung-berlin.json"
+    }
+  ]
+}
+</script>
+```
+
+# Wie setze ich SEO mit einer Quarto-Webseite um? 
 
