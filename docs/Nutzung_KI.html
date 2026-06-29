@@ -271,14 +271,16 @@ blip-env\Scripts\activate</code></pre>
 <li>Benötigte Software-Pakete installieren:</li>
 </ol>
 <pre><code>pip install torch torchvision transformers pillow accelerate</code></pre>
+<p>und</p>
+<pre><code>pip install protobuf</code></pre>
 <ol start="3" type="1">
 <li>Python-Skript für die Modellnutzung erstellen</li>
 </ol>
 <pre><code>from transformers import pipeline
 
 pipe = pipeline(
-    "image-text-to-text",
-    model="GHonem/blip-image-captioning-base-test_sagemaker-tops-3"
+    "image-to-text",
+    model="Salesforce/blip-image-captioning-base"
 )
 
 result = pipe("bild.jpg")
@@ -716,7 +718,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/franziskadigital/FDM-Quarto/blob/main/Nutzung_KI.qmd" class="toc-action"><i class="bi bi-github"></i>Quellcode anzeigen</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"selector":".lightbox","closeEffect":"zoom","loop":false,"descPosition":"bottom","openEffect":"zoom"});
+<footer class="footer"><div class="nav-footer"><div class="nav-footer-center"><div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/franziskadigital/FDM-Quarto/blob/main/Nutzung_KI.qmd" class="toc-action"><i class="bi bi-github"></i>Quellcode anzeigen</a></li></ul></div></div></div></footer><script>var lightboxQuarto = GLightbox({"descPosition":"bottom","openEffect":"zoom","selector":".lightbox","closeEffect":"zoom","loop":false});
 window.onload = () => {
   lightboxQuarto.on('slide_before_load', (data) => {
     const { slideIndex, slideNode, slideConfig, player, trigger } = data;

@@ -70,14 +70,20 @@ Es gibt auch andere Plattformen, die sich darauf spezialisiert haben, verfügbar
 pip install torch torchvision transformers pillow accelerate
 ```
 
+und 
+
+```
+pip install protobuf
+```
+
 3. Python-Skript für die Modellnutzung erstellen
 
 ```
 from transformers import pipeline
 
 pipe = pipeline(
-    "image-text-to-text",
-    model="GHonem/blip-image-captioning-base-test_sagemaker-tops-3"
+    "image-to-text",
+    model="Salesforce/blip-image-captioning-base"
 )
 
 result = pipe("bild.jpg")
